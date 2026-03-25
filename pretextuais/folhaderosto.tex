@@ -1,0 +1,36 @@
+\begin{folhaderosto} %contra-capa
+    \centering
+    {\ABNTEXchapterfont\MakeUppercase{\imprimirautor}}
+    
+    \vfill
+   
+    
+    {\ABNTEXchapterfont\bfseries \MakeUppercase{\imprimirtitulo}}
+    
+    \vfill
+
+    % --- nota de apresentação ---
+    \hspace{.45\textwidth} % Empurra o bloco para a direita 45% da largura da página
+    \begin{minipage}{.47\textwidth}
+        \SingleSpacing % ABNT exige espaçamento simples nesta parte
+        \hyphenpenalty=10000 % Evita quebras de palavras
+        \hbadness=10000 % Evita mensagens de "underfull hbox"
+        \sloppy % Permite que o texto se ajuste melhor, evitando espaços excessivos
+        
+        \imprimirpreambulo
+        
+        \vspace{0.5cm}
+
+        {\imprimirorientadorRotulo~\imprimirorientador} 
+    
+        
+        \if\relax\detokenize\expandafter{\imprimircoorientador}\relax\else
+            {\imprimircoorientadorRotulo~\imprimircoorientador}
+        \fi
+    \end{minipage}
+   
+    \vfill
+    
+    {\imprimirlocal}\\
+    {\imprimirdata}
+\end{folhaderosto}
