@@ -1,0 +1,51 @@
+# Arquivos intermediários do LaTeX
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.lb
+*.brf
+*.idx
+*.ilg
+*.ind
+*.bbl
+*.blg
+*.run.xml
+*.synctex.gz
+*.fdb_latexmk
+
+# Arquivos de saída / artefatos de build
+*.pdf
+*.dvi
+*.ps
+
+# Diretórios de build e caches
+_minted-*/
+_build/
+build/
+out/
+
+# Editor e sistema operacional
+*~
+*.swp
+*.swo
+*.bak
+*.backup
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs locais
+latexmk.log
+texput.log
+
+# Arquivos temporários gerados por ferramentas auxiliares
+*.synctex
